@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    transition: all 0.5s;
+}
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: whitesmoke;
+}
+
+.card{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    border-radius: 25px;
+}
+
+.acc{
+    width: 30%;
+    height: 100%;
+    background-color: #2E549C;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.status{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 5rem 3rem;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+/* ACC PART */
+.accLabel{
+    margin-top: 20rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: whitesmoke;
+}
+
+.accContainer{
+    height: 80%;
+    margin-top: 1.5rem;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2rem 1rem;
+}
+
+.profileImg{
+    width: 50px;
+    height: 50px;
+    fill: #2E549C;
+}
+
+.accList{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none ;
+    margin-top: 1.5rem;
+    padding: 0.5rem 0.9rem;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    background-color: lightgray;
+}
+
+.accContainer ul li:first-child{
+    margin-top: 0;
+}
+
+.accList:hover, .accList.selectedUser:hover{
+    box-shadow: 10px 10px 10px black;
+    transform: scale(0.9);
+    transform: translateX(-0.2rem);
+}
+.accList.selectedUser{
+    background-color: #2E549C;
+    color: whitesmoke;
+}
+
+.accList.selectedUser .profileImg{
+    fill: whitesmoke;
+}
+
+.addAcc{
+    width: 30px;
+    height: 30px;
+    margin-top: 1.5rem;  
+    border-radius: 90%; 
+    fill: #2E549C;
+}
+
+.addAcc:hover{
+    transform: scale(1.5);
+}
+
+/* STATUS PART */
+
+.name{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #2E549C;
+}
+
+.bmiStatus{
+    border: 1px solid;
+    margin-top: 4rem;
+    padding: 2rem;
+    font-size: 2.5rem;
+    background-color: #2E549C;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+
+.otherStatus{
+    border: 1px solid;
+    display: flex;
+    gap: 3rem;
+    padding: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-color: #2E549C;
+    color: whitesmoke;
+}
+
+.heightStatus{
+    
+}
