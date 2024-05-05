@@ -33,7 +33,7 @@ body{
     border-bottom-left-radius: 25px;
 }
 
-.status{
+.userFormCard{
     width: 70%;
     height: 100%;
     text-align: center;
@@ -108,9 +108,63 @@ body{
     transform: scale(1.5);
 }
 
-/* STATUS PART */
+/* FORM PART */
 
-.name{
+.formLabel{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2E549C;
+}
+
+.userForm{
+    display: block;
+    font-weight: bold;
+    margin: 1rem 0rem;
+    color: #2E549C;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.userform.age{
+    gap: 2.1rem;
+}
+
+input[type=text],[type=number] {
+    border-radius: 10px;
+    border: 1px solid #2E549C;
+    background-color: lightgray;
+    padding: 0.3rem;
+
+}
+
+.submit{
+    font-size: 1rem;
+    padding: 0.7rem;
+    border-radius: 30px;
+    background-color: #2E549C;
+    color: whitesmoke;
+    border: 0px;
+    margin-top: 1rem;
+}
+
+.submit:hover{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.status{
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    padding: 5rem 3rem;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.stat-name{
     font-size: 4rem;
     font-weight: bolder;
     color: #2E549C;
@@ -138,6 +192,27 @@ body{
     color: whitesmoke;
 }
 
-.heightStatus{
-    
+.loader-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 13px solid #2E549C;
+    border-right: 12px solid darkgray;
+    animation: rotate 2s linear forwards infinite;
+
+}
+@keyframes rotate{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0);
+    }
 }

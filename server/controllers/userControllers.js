@@ -16,7 +16,10 @@ exports.createUser = async (req, res) => {
 
   res.status(200).json({
     status:"success",
-    message:"User created successfully"
+    message:"User created successfully",
+    data:{
+      user
+    }
   })
 };
 
@@ -26,6 +29,22 @@ exports.getAllUsers = async (req, res)=>{
         status:"success",
         data:{
             users
+        }
+    })
+}
+
+exports.getUserById = async (req, res)=>{
+    const user = await User.findById(req.params.id)
+    if(!user || user.length === 0 || req.params.id.length !== 24){
+        return res.json({
+            status:"fail",
+            message:"User not found"
+        })
+    }
+    res.status(200).json({
+        status:"success",
+        data:{
+            user
         }
     })
 }
